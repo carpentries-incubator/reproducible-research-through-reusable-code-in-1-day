@@ -1,7 +1,7 @@
 ---
 title: "Software dependencies"
-teaching: 5
-exercises: 20
+teaching: 10
+exercises: 45
 editor_options: 
   markdown: 
     wrap: 72
