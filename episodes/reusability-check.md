@@ -1,7 +1,7 @@
 ---
 title: "Reusability check"
 teaching: 5
-exercises: 40
+exercises: 60
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
