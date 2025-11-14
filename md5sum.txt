@@ -4,6 +4,7 @@
 "config.yaml" "54a7d3c94661943dc85c7787c54bb081" "site/built/config.yaml" "2024-11-27"
 "index.md" "479f0ad577eb1a122ef0816b54f1bd3a" "site/built/index.md" "2024-11-27"
 "links.md" "8184cf4149eafbf03ce8da8ff0778c14" "site/built/links.md" "2024-11-27"
+"workshops.md" "fa5077e26dd1fcce416d0eef9a6c2f0d" "site/built/workshops.md" "2025-11-14"
 "episodes/github.md" "e9d702e6cdb7a13f2d39afa777dbc54c" "site/built/github.md" "2025-11-14"
 "episodes/software-dependencies.md" "16a15801e11818dc70e241918b4ddc6f" "site/built/software-dependencies.md" "2025-04-03"
 "episodes/documentation.md" "c6f329d74e6975b8366cecf3453c48e2" "site/built/documentation.md" "2025-04-03"
