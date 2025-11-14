@@ -1,7 +1,7 @@
 ---
 title: "Coding conventions and modular coding"
-teaching: 5
-exercises: 30
+teaching: 15
+exercises: 60
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 

@@ -1,7 +1,7 @@
 ---
 title: "Pre-workshop assignment: Uploading a coding project to GitHub"
-teaching: 5
-exercises: 45
+teaching: 0
+exercises: 60
 ---
 
 ::: questions
