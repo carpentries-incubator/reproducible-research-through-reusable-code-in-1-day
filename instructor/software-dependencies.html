@@ -118,11 +118,11 @@
   Reproducible research through reusable code
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 23%" class="percentage">
-    23%
+<aside class="col-md-12 lesson-progress"><div style="width: 17%" class="percentage">
+    17%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 23%" aria-valuenow="23" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 17%" aria-valuenow="17" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -326,13 +326,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Software dependencies</h1>
-        <p>Last updated on 2025-04-03 |
+        <p>Last updated on 2025-11-14 |
 
         <a href="https://github.com/esciencecenter-digital-skills/reproducible-research-through-reusable-code/edit/main/episodes/software-dependencies.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 55 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -451,7 +451,7 @@ try to re-run their code before adapting it.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-Pythonvirtualenv" class="tab-pane show active" aria-labelledby="nav-tab-1-Pythonvirtualenv" role="tabpanel">
+<div id="nav-tabpanel-1-Pythonvirtualenv" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Pythonvirtualenv">
 <p><strong>A</strong>: You find a couple of library imports across the
 code but that’s it.</p>
 <p><strong>B</strong>: The README file lists which libraries were used
@@ -484,7 +484,7 @@ python==3.8
 someproject==1.2.3
 anotherproject==2.3.4</code></pre>
 </div>
-<div id="nav-tabpanel-1-R" class="tab-pane" aria-labelledby="nav-tab-1-R" role="tabpanel">
+<div id="nav-tabpanel-1-R" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-R">
 <p><strong>A</strong>: You find a couple of <code>library()</code> or
 <code>require()</code> calls across the code but that’s it.</p>
 <p><strong>B</strong>: The README file lists which libraries were used
@@ -533,7 +533,7 @@ anotherproject (== 2.3.4)</code></pre>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>A</strong>: It will be tedious to collect the dependencies
 one by one. And after the tedious process you will still not know which
@@ -584,7 +584,7 @@ communicate this information?</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-Pythonvirtualenv" class="tab-pane show active" aria-labelledby="nav-tab-2-Pythonvirtualenv" role="tabpanel">
+<div id="nav-tabpanel-2-Pythonvirtualenv" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Pythonvirtualenv">
 <p>Try this in your own project:</p>
 <pre class="console"><code>$ pip freeze &gt; requirements.txt</code></pre>
 <p>Have a look at the generated file and discuss what you see.</p>
@@ -594,7 +594,7 @@ communicate this information?</p>
 over to the <a href="https://carpentries-incubator.github.io/python-intermediate-development/12-virtual-environments/index.html#creating-virtual-environments-using-venv" target="_blank" class="external-link">Carpentries Intermediate Research Software Development
 Skills (Python)</a> lesson.</p>
 </div>
-<div id="nav-tabpanel-2-R" class="tab-pane" aria-labelledby="nav-tab-2-R" role="tabpanel">
+<div id="nav-tabpanel-2-R" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-R">
 <p>This example uses renv.</p>
 <p>First initialize renv (install the package if needed) using
 <code>renv::init()</code>. Then try to “save” and “load” the state of
@@ -634,7 +634,7 @@ dependencies to GitHub:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-RStudio" class="tab-pane show active" aria-labelledby="nav-tab-3-RStudio" role="tabpanel">
+<div id="nav-tabpanel-3-RStudio" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-RStudio">
 <ol style="list-style-type: decimal"><li>Add your changed files by clicking on ‘Staged’ (share not only the
 lock file, but also the .RProfile and activate.R files needed to
 recreate the environment).</li>
@@ -642,7 +642,7 @@ recreate the environment).</li>
 dependencies”) and clicking on ‘Commit’.</li>
 <li>Push your changes to GitHub by clicking on ‘Push’.</li>
 </ol></div>
-<div id="nav-tabpanel-3-VisualStudioCode" class="tab-pane" aria-labelledby="nav-tab-3-VisualStudioCode" role="tabpanel">
+<div id="nav-tabpanel-3-VisualStudioCode" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-VisualStudioCode">
 <ol style="list-style-type: decimal"><li>Add your changed files by clicking on the ‘+’ next to ‘Changes’ or
 next to the individual files (requirements.txt).</li>
 <li>Commit your changes by adding a commit message (e.g., “Add
@@ -732,7 +732,7 @@ any links that you are not going to use.
   "url": "https://esciencecenter-digital-skills.github.io/reproducible-research-through-reusable-code/instructor/software-dependencies.html",
   "identifier": "https://esciencecenter-digital-skills.github.io/reproducible-research-through-reusable-code/instructor/software-dependencies.html",
   "dateCreated": "2024-11-27",
-  "dateModified": "2025-04-03",
+  "dateModified": "2025-11-14",
   "datePublished": "2025-11-14"
 }
 
