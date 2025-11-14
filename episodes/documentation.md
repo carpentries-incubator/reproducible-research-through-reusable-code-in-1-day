@@ -1,7 +1,7 @@
 ---
 title: Document your research software
-teaching: 0
-exercises: 15
+teaching: 15
+exercises: 30
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
