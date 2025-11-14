@@ -1,9 +1,18 @@
 # Reproducible research through reusable code
 
+This is the lesson material for the workshop 'Reproducible research through reusable code in 1 day.'
 This workshop teaches you the skills to make your code reusable by others. 
 In one day you will share your coding project on GitHub and work on 
 the minimal requirements needed for others to run your code.
 At the end of the day we will do a short reusability check of each other's repository.
+
+## Teaching this lesson?
+This material is open-source and freely available. 
+Are you planning on using our material in your teaching? 
+We would love to help you prepare to teach the lesson and receive feedback on how it could be further improved, based on your experience in the workshop.
+
+You can notify us that you plan to teach this lesson by creating an issue in this repository. Also, it would be great if you can update [this overview of all workshops taught with this lesson material](workshops.md). 
+This helps us show the impact of developing open-source lessons to our funders.
 
 ## Target audience
 This workshop is aimed at researchers who want to make their code reusable. 
