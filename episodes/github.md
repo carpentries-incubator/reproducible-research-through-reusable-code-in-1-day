@@ -23,10 +23,9 @@ You are going to add your existing project to GitHub. This is important for mult
 
 3.  By publishing your code on GitHub, your code is now available for others for re-use.
 
-The exercises on this page should be done **before the workshop**. This will help us to focus on improving the code during the workshop day. 
-You will need approximately one hour to finish this pre-workshop assignment.
+The exercises on this page should be done **before the workshop**. This will help us to focus on improving the code during the workshop day. You will need approximately one hour to finish this pre-workshop assignment.
 
-Please let us know if you are stuck or have any questions by emailing s.vanderburg@esciencecenter.nl and e.klapwijk@essb.eur.nl.
+Please let us know if you are stuck or have any questions by contacting your course instructors.
 
 :::: challenge
 ## Exercise: Install Git and create a GitHub account
@@ -61,7 +60,7 @@ If Git is not already available on your machine you can install this package via
 
 #### Create a GitHub account
 
-You will need an account for [GitHub](https://github.com/) to publish your code there.
+You will need an account for [GitHub](https://github.com/){target="_blank"} to publish your code there.
 
 1.  To sign up for an account, navigate to <https://github.com/> and follow the prompts.
 2.  Verify your email address.
@@ -78,6 +77,12 @@ If your code is already on GitHub you can explore the following topics:
 -   If you already know the basics of `git`, familiarize yourself with best practices in using git with [this lesson](https://carpentries-incubator.github.io/python-intermediate-development/14-collaboration-using-git/index.html){target="_blank"}. This lesson assumes you have some project with changes to it, you can make some changes in your project to mimic the lesson.
 :::
 
+::: callout
+## Alternatives to GitHub
+
+Please note that we used GitHub as an example in this workshop because it is widely used in research settings. That is not to say that it is the only or even the best solution for hosting your code. Please consider Software Freedom Conservancy's [Give Up GitHub!](https://sfconservancy.org/GiveUpGitHub/){target="_blank"} campaign, or look at these [European Alternatives](https://european-alternatives.eu/alternative-to/github){target="_blank"}.
+:::
+
 ## Pushing existing code to GitHub
 
 Below are steps for pushing your existing code to GitHub using RStudio or Visual Studio Code. There are many tools to push your code to GitHub (including the command line), but if you are not used to doing this we recommend one of these options.
@@ -91,15 +96,17 @@ First install [RStudio](https://posit.co/download/rstudio-desktop/){target="_bla
 ### RStudio
 
 #### Activate Git in RStudio
+
 Activate Git in RStudio by following these steps:
 
-1. From the Tools menu, click Global Options
-2. Click on the Git/SVN tab
-3. Click Enable version control interface for RStudio projects
+1.  From the Tools menu, click Global Options
+2.  Click on the Git/SVN tab
+3.  Click Enable version control interface for RStudio projects
 
 ![](https://docs.posit.co/ide/user/ide/guide/tools/images/version-control-options.png){alt="Activating Git in RStudio"}
 
 #### Configure GitHub in RStudio
+
 Follow these instructions on [how to configure GitHub for RStudio](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421){target="_blank"}.
 
 Next, you need to initialize git (version control) for your Project:
@@ -174,6 +181,7 @@ If you want to learn more about git later, you can follow [this great lesson](ht
 :::
 
 ### All prepared for the workshop!
+
 Now that you published your project on GitHub and know how to push new changes to it you are ready for the workshop!
 
 ::: keypoints
