@@ -37,6 +37,11 @@ The README file is the first thing a user/collaborator sees. It should include:
 - Link or instructions for contributing
 - Recommended citation
 
+For a more extensive description of what should be in a README, have a look at
+[makeareadme.com](https://www.makeareadme.com/){target="_blank"}, which also provides a minimal 
+[README template](https://www.makeareadme.com/#template-1){target="_blank"} that 
+you can use to get started.
+
 ::: challenge
 ### Exercise README: Draft or improve a README for your project
 
