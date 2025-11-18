@@ -35,12 +35,17 @@ is a good starting point.
 :::
 
 ::: challenge
-## Add `howfairis` badge to your README file
-Add the `howfairis` badge to your README file.
-Follow [the instructions on the howfairis GitHub repo](https://github.com/fair-software/howfairis){target="_blank"}
+## Add `fairsoftwarechecklist.net` badge to your README file
+Add the [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=00&a=00000&i=00000&r=000){target="_blank"} 
+badge to your README file. Do the self-assessment for FAIR research software on [fairsoftwarechecklist.net](https://fairsoftwarechecklist.net/){target="_blank"}
+and link to your answers using the badge.
+
+Alternatively, you can add the [![FAIR software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green)](https://fair-software.eu/){target="_blank"} 
+badge to your README. Follow [the instructions on the howfairis GitHub repo](https://github.com/fair-software/howfairis){target="_blank"} to run an automated check
+on your code repository.
 
 How FAIR is your project and what do you need to do to improve it?
-Read more about FAIR software at [https://fair-software.nl/](https://fair-software.nl/){target="_blank"}
+Read more about FAIR software at [https://fair-software.eu/](https://fair-software.eu/){target="_blank"}
 
 :::
 
