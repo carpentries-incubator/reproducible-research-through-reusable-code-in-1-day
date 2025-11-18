@@ -29,6 +29,8 @@ Try to prioritize what you think will be most beneficial to your project.
 Pick a license and add it to the repository.
 Use https://choosealicense.com/ to find a license for your project. 
 Or if you do not know, you can use [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/){target="_blank"}, a common permissive open-source license.
+To get some more background information about licenses, the [licensing chapter from the Turing Way](https://book.the-turing-way.org/reproducible-research/licensing/)
+is a good starting point. 
 
 :::
 
