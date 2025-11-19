@@ -45,6 +45,10 @@ or [CODECHECK](https://codecheck.org.uk/){target="_blank"}.
 Even if you don’t, it would be helpful to take into account their guidelines: 
 both initiatives emphasize that documentation of your code is key!
 
+Looking at the [repositories that have been CODECHECKed](https://github.com/codecheckers){target="_blank"} 
+or the [Reprohack reviews](https://www.reprohack.org/review/){target="_blank"} is another great way to get 
+inspiration to improve the reusability of your own project.
+
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
