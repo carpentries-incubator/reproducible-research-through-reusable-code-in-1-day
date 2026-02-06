@@ -26,13 +26,61 @@ Try to prioritize what you think will be most beneficial to your project.
 
 ::: challenge
 ## Add a license to your project
-Pick a license and add it to the repository.
-Use https://choosealicense.com/ to find a license for your project. 
-Or if you do not know, you can use [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/){target="_blank"}, a common permissive open-source license.
-To get some more background information about licenses, the [licensing chapter from the Turing Way](https://book.the-turing-way.org/reproducible-research/licensing/)
-is a good starting point. 
+
+A license is essential so that others can reuse and adapt your work. 
+
+You can use  https://choosealicense.com/ to find a suitable license for your project. If you do not know which one to pick, we recommend using the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/){target="_blank"}, a common permissive open-source license. You can also check if your institution recommends certain licenses for research software. 
+
+You can find more information on licenses in the [licensing chapter from the Turing Way](https://book.the-turing-way.org/reproducible-research/licensing/).
+
+::: group-tab
+### R
+
+You can use [`usethis`](https://usethis.r-lib.org/reference/licenses.html) to automatically generate a license of your choice. We installed `usethis` in an earlier episode, but if you don't have it yet, install it with:
+``` r
+install.packages("usethis")
+```
+Then run:
+
+``` r
+library(usethis)
+use_mit_license(copyright_holder = "Your Name")
+```
+
+This will create a file called `LICENSE` with the permissive MIT license in the root folder of your project. If you want to use a different license, check out the [usethis documentation](https://usethis.r-lib.org/reference/licenses.html) so see the other options.
+
+Once you generated the `LICENSE` file, inspect it and make sure the copyright holder, the organization and year are correct. You can then stage the new file and commit the changes with a suitable message, for example:
+
+``` bash
+git add LICENSE
+git commit -m "Add LICENSE"
+git push # if you are using a remote repository
+```
+
+### Python
+
+You can use the [`reuse`](https://pypi.org/project/reuse/) package to automatically generate a license of your choice.
+
+In the terminal, run:
+
+```bash
+pip install reuse  # if you don't have reuse installed already
+reuse download --output LICENSE MIT
+```
+
+This will create a file called `LICENSE` with the permissive MIT license in the root folder of your project. If you want to use a different license, check out the [usethis documentation](https://usethis.r-lib.org/reference/licenses.html) so see the other options.
+
+Once you generated the `LICENSE` file, inspect it and make sure the copyright holder, the organization and year are correct. You can then stage the new file and commit the changes with a suitable message, for example:
+
+``` bash
+git add LICENSE
+git commit -m "Add LICENSE"
+git push # if you are using a remote repository
+```
 
 :::
+:::
+
 
 ::: challenge
 ## Add `fairsoftwarechecklist.net` badge to your README file
