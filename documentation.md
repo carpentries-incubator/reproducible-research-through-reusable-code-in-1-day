@@ -17,9 +17,6 @@ exercises: 30
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::: instructor
-Use [these slides](https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/good-practices-lesson/documentation-slides){target="_blank"} as
-a guidance.
-
 The main purpose of this lesson is to make sure participants understand that DOCUMENTATION IS IMPORTANT. The goal is more to trigger participants 
 then to teach them all the different ways one could document a project. It is good to communicate
 this (and that this will give more time for the other parts of the workshop).
