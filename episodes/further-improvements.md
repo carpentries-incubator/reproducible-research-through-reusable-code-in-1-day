@@ -40,7 +40,7 @@ Add the [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](h
 badge to your README file. Do the self-assessment for FAIR research software on [fairsoftwarechecklist.net](https://fairsoftwarechecklist.net/){target="_blank"}
 and link to your answers using the badge.
 
-Alternatively, you can add the [![FAIR software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green)](https://fair-software.eu/){target="_blank"}
+Alternatively, you can add the [![FAIR software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green.svg)](https://fair-software.eu/){target="_blank"}
 badge to your README. Follow [the instructions on the howfairis GitHub repo](https://github.com/fair-software/howfairis){target="_blank"} to run an automated check
 on your code repository.
 
