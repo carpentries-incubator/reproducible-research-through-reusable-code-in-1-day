@@ -17,7 +17,7 @@ exercises: 30
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::: instructor
-The main purpose of this lesson is to make sure participants understand that DOCUMENTATION IS IMPORTANT. The goal is more to trigger participants 
+The main purpose of this lesson is to make sure participants understand that DOCUMENTATION IS IMPORTANT. The goal is more to trigger participants
 then to teach them all the different ways one could document a project. It is good to communicate
 this (and that this will give more time for the other parts of the workshop).
 
@@ -35,24 +35,26 @@ The README file is the first thing a user/collaborator sees. It should include:
 - Recommended citation
 
 For a more extensive description of what should be in a README, have a look at
-[makeareadme.com](https://www.makeareadme.com/){target="_blank"}, which also provides a minimal 
-[README template](https://www.makeareadme.com/#template-1){target="_blank"} that 
+[makeareadme.com](https://www.makeareadme.com/){target="_blank"}, which also provides a minimal
+[README template](https://www.makeareadme.com/#template-1){target="_blank"} that
 you can use to get started.
+
+For a primer on what Markdown is and how it works, check out the [Markdown Guide](https://www.markdownguide.org/getting-started/). They also have a more concise [Cheatsheet](https://www.markdownguide.org/cheat-sheet/) listing the most common syntax elements.
 
 ::: challenge
 ### Exercise README: Draft or improve a README for your project
 
-Create a new file called README.md in your local project (or improve the README.md file 
+Create a new file called README.md in your local project (or improve the README.md file
 for your project).
 
-You can work individually, but you could also discuss whether anything can be improved on 
+You can work individually, but you could also discuss whether anything can be improved on
 your neighbour's README file(s).
 
-Think about the user (which can be a future you) of your project, 
-what does this user need to know to use or contribute to the project? 
+Think about the user (which can be a future you) of your project,
+what does this user need to know to use or contribute to the project?
 And how do you make your project attractive to use or contribute to?
 
-(Optional): Try the <https://hemingwayapp.com/>{target="_blank"} to analyse your README file 
+(Optional): Try the <https://hemingwayapp.com/>{target="_blank"} to analyse your README file
 and make your writing bold and clear.
 :::
 
@@ -73,7 +75,7 @@ Follow these steps to add (the changes to) your README file to GitHub:
 
 :::
 
-Go to your GitHub repository and refresh the home page to see how the README file 
+Go to your GitHub repository and refresh the home page to see how the README file
 becomes a sort of landing page for your project.
 :::
 
@@ -183,21 +185,21 @@ def fahrenheit_to_celsius(temp_f: float) -> float:
     return temp_c
 ```
 
-Docstrings can do a bit more than just comments:  
+Docstrings can do a bit more than just comments:
 
-- Tools can generate help text automatically from the docstrings.  
+- Tools can generate help text automatically from the docstrings.
 
-- Tools can generate documentation pages automatically from code.  
+- Tools can generate documentation pages automatically from code.
 
 It is common to write docstrings for functions, classes, and modules.
 
-Good docstrings describe:  
+Good docstrings describe:
 
-- What the function does.  
+- What the function does.
 
-- What goes in (including the type of the input variables). 
+- What goes in (including the type of the input variables).
 
-- What goes out (including the return type).  
+- What goes out (including the return type).
 
 **Naming is documentation**:
 Giving explicit, descriptive names to your code segments (functions, classes,

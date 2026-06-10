@@ -25,6 +25,8 @@ You are going to add your existing project to GitHub. This is important for mult
 
 The exercises on this page should be done **before the workshop**. This will help us to focus on improving the code during the workshop day. You will need approximately one hour to finish this pre-workshop assignment.
 
+For a primer or refresher on Git and GitHub you can watch the first video ["Intro, Config, Creating a Repo - Version Control with Git"](https://www.youtube.com/watch?v=4UhGzmijRtM&list=PL90vX4e9ORqeE1wyMbST9pJ1-Mj45f2JY) of the playlist ["Version Control with Git"](https://www.youtube.com/playlist?list=PL90vX4e9ORqeE1wyMbST9pJ1-Mj45f2JY).
+
 Please let us know if you are stuck or have any questions by contacting your course instructors.
 
 :::: challenge
