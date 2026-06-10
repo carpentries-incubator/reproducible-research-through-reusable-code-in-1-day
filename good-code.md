@@ -141,7 +141,7 @@ pays attention to when linting. Did you learn something new about the Python lan
 
 ### R
 
-The standard option for [formatting R code is `styler`](http://styler.r-lib.org/), for [linting it's `lintr`](https://lintr.r-lib.org/).
+The standard option for [formatting R code is `styler`](https://styler.r-lib.org/), for [linting it's `lintr`](https://lintr.r-lib.org/).
 
 ```R
 # Install the formatter and linter.
