@@ -62,13 +62,16 @@ whichever file you use to define your dependencies.
 
 **Formatting**
 
-First, use the formatter. Note that the use without the `--check` flag `ruff` 
-automatically changes your file. This is the default, because formatting does 
-not change the behaviour of your code.
+First, use the formatter. Note that the use without the `--check` or `--diff`
+flag `ruff` automatically changes your file. This is the default, because
+formatting does not change the behaviour of your code.
 
 ```bash
 # Check for formatting
 ruff format --check
+
+# Show what formatting fixes can be applied, without writing anything
+ruff format --diff
 
 # Fix formatting, if desired
 ruff format
@@ -80,15 +83,18 @@ your choices if you need to, but be aware that the defaults were chosen for a re
 
 **Linting**
 
-Next, try out the linter. While fixing formatting is usually harmless, linting 
-fixes change your code on a deeper level. By default, `ruff` only advises you. 
-To automatically apply the linting, you need an explicit `--fix` flag. This is 
-because linting can touch the functionality of your code, so make sure to review 
-the changes `ruff` makes.
+Next, try out the linter. While fixing formatting is usually harmless, linting
+fixes change your code on a deeper level. By default, `ruff check` only advises
+you. To automatically apply the linting, you need an explicit `--fix` flag. This
+is because linting can touch the functionality of your code, so make sure to
+review the changes `ruff check` makes using e.g. `ruff check --diff`.
 
 ```bash
 # Check for linting
 ruff check
+
+# Show what linting fixes can be applied, without writing anything
+ruff check --diff
 
 # Fix linting, if desired
 ruff check --fix
