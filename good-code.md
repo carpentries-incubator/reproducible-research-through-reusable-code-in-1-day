@@ -74,6 +74,14 @@ Some generic advice for naming things:
 5. Watch for keywords like `and` to indicate that a function can be split
 6. Ask what meaning others get from your names. What would they suggest instead?
 
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+For the exercises, focus on one or two files instead of a whole project. The
+goals is to learn the tools, not necessarily to improve everything just yet.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ### Improving your code
 
 ::: challenge
@@ -548,6 +556,13 @@ fahr_to_kelvin(212)
 ```
 
 :::
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+Again, for the next exercise, focus on one or two files first. Students who
+need a challenge can choose to improve more files.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::: challenge
 ## Challenge: Identify code that can be put in a function
