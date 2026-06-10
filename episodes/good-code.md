@@ -561,6 +561,17 @@ GitHub issues are a good way to track your progress and to-do list.
 As well as a way for others to signal issues with your code.
 :::
 
+### Software Architecture
+Software Architecture is as much art as it is science. Keep in mind that it's
+not a goal in itself; it should serve _you_ and your project, so start with the
+recommendations in this lesson first.
+
+If you do want to learn more about what else you can pay attention to, you can
+check out the [checklist item Architecture](https://book.the-turing-way.org/reproducible-research/reviewing/reviewing-checklist/#rr-checklist-for-code-review-architecture)
+in the [The Turing Way book](https://book.the-turing-way.org/). An even more
+detailed [training on Software Architecture and Design](https://train.rse.ox.ac.uk/material/HPCu/software_architecture_and_design)
+can be found on the [OxRSE Training](https://train.rse.ox.ac.uk/) website.
+
 ## (Optional) Modularity in Python
 
 ::: challenge
