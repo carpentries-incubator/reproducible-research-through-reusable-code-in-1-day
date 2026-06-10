@@ -4,7 +4,7 @@ teaching: 15
 exercises: 60
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - Why should you follow software code style conventions?
 - How can formatters and linters help you with this in Python and R?
@@ -22,30 +22,57 @@ exercises: 60
 
 ## Coding formatting and linting
 
-Readable code - for others and our future selves - should be descriptive, cleanly 
-and consistently formatted, and use sensible, descriptive names for variables, functions 
+Readable code - for others and our future selves - should be descriptive, cleanly
+and consistently formatted, and use sensible, descriptive names for variables, functions
 and modules. Furthermore, our code should be efficient and well designed.
 
-Programs called formatters and linters can help us with the above. What do they 
+Programs called formatters and linters can help us with the above. What do they
 do and how do they differ?
 
 ### Formatters
 
-With a light touch, formatters ensure the code adheres to standard style guides without altering 
-functionality. A style guide is a set of conventions that we agree upon with our 
-colleagues or community, to ensure that people produce code which looks similar 
-in style. For examples, check out the [PEP 8 Style Guide](https://peps.python.org/pep-0008/) or 
+With a light touch, formatters ensure the code adheres to standard style guides without altering
+functionality. A style guide is a set of conventions that we agree upon with our
+colleagues or community, to ensure that people produce code which looks similar
+in style. For examples, check out the [PEP 8 Style Guide](https://peps.python.org/pep-0008/) or
 the [Tidyverse style guide](https://style.tidyverse.org/) for Python and R, respectively.
 
-Good, consistent formatting makes the code easier to read and can prevent merge 
+Good, consistent formatting makes the code easier to read and can prevent merge
 conflicts.
 
 ### Linters
 
-The work of "linters" is a bit more heavy-handed. These programs can check your code 
-for common programming errors, convoluted syntax, unnecessary complexity, unused code, 
-performance bottlenecks and other violations of best practices. Often they can fix the 
+The work of "linters" is a bit more heavy-handed. These programs can check your code
+for common programming errors, convoluted syntax, unnecessary complexity, unused code,
+performance bottlenecks and other violations of best practices. Often they can fix the
 issues they encounter, or suggest appropriate improvements otherwise.
+
+### Naming conventions
+
+Naming things is hard. With their names, we want to convey as much meaning as
+possible in a limited number of characters. A good name follows the style
+conventions of the language, and provides useful meaning in its context.
+Linters will help you with the style aspect, since they will complain if you
+don't follow the style guide of your language.
+
+Making your names meaningful is the hardest part. Since short names are usually
+preferred over long names, a common mistake is making the names so short they
+don't have enough meaning without extra context. For example, what would
+variables `a`, `t`, or `x` be? What do you think a function called `run` or
+`process` does? On the other hand, `time_in_hours_since_last_restaurant_visit`
+is obviously too verbose. Working in the limited context of small functions or
+dedicated classes, a few words should usually be enough: e.g.,
+`hours_since_visit`. Getting this right takes practice, trial and error. Read
+other people's code for inspiration and ask for feedback on yours!
+
+Some generic advice for naming things:
+
+1. Follow the style guide for your language/codebase
+2. Variables and classes are nouns, functions are verbs
+3. Avoid single letters or abbreviations if possible
+4. When in doubt, it is better to be overly specific than too general
+5. Watch for keywords like `and` to indicate that a function can be split
+6. Ask what meaning others get from your names. What would they suggest instead?
 
 ### Improving your code
 
@@ -55,9 +82,9 @@ Install and use a formatter and a linter to improve the style of your code.
 
 ::: tab
 ### Python
-[The program `ruff`](https://github.com/astral-sh/ruff) can both format _and_ lint 
-Python code. [Install `ruff`](https://docs.astral.sh/ruff/installation/) from PyPI 
-or conda. Don't forget to add it to your `requirements.txt`, `pyproject.toml` or 
+[The program `ruff`](https://github.com/astral-sh/ruff) can both format _and_ lint
+Python code. [Install `ruff`](https://docs.astral.sh/ruff/installation/) from PyPI
+or conda. Don't forget to add it to your `requirements.txt`, `pyproject.toml` or
 whichever file you use to define your dependencies.
 
 **Formatting**
@@ -77,8 +104,8 @@ ruff format --diff
 ruff format
 ```
 
-Do you agree with the default choices `ruff` made? You can 
-[configure](https://docs.astral.sh/ruff/tutorial/#configuration) `ruff` to follow 
+Do you agree with the default choices `ruff` made? You can
+[configure](https://docs.astral.sh/ruff/tutorial/#configuration) `ruff` to follow
 your choices if you need to, but be aware that the defaults were chosen for a reason.
 
 **Linting**
@@ -100,8 +127,8 @@ ruff check --diff
 ruff check --fix
 ```
 
-What is your opinion on the linting suggestions? Again, you can 
-[configure](https://docs.astral.sh/ruff/tutorial/#configuration) the details `ruff` 
+What is your opinion on the linting suggestions? Again, you can
+[configure](https://docs.astral.sh/ruff/tutorial/#configuration) the details `ruff`
 pays attention to when linting. Did you learn something new about the Python language?
 
 ### R
@@ -152,23 +179,23 @@ https://rfortherestofus.com/2024/03/styler-package
 
 ### (Optional) Git pre-commit hooks
 
-So far, formatting and linting were conscious choices: you have to remember to execute 
-them yourself every once in a while. A more robust approach would be to take away this 
-mental load and automate linting and formatting. This can be achieved through "git hooks", 
-which are a set of scripts `git` can run every time a certain action is performed. Here 
+So far, formatting and linting were conscious choices: you have to remember to execute
+them yourself every once in a while. A more robust approach would be to take away this
+mental load and automate linting and formatting. This can be achieved through "git hooks",
+which are a set of scripts `git` can run every time a certain action is performed. Here
 we have a look at "pre-commit hooks" that check your code changes _before_ you commit them.
 
 ::: challenge
 
-The amount of git pre-commit hook scripts can grow rather large on 
-bigger projects. `pre-commit` manages your commit hooks and helper programs in a 
+The amount of git pre-commit hook scripts can grow rather large on
+bigger projects. `pre-commit` manages your commit hooks and helper programs in a
 declarative way and makes them easy to share between collaborators.
 
 Use a `git` pre-commit hook to run formatters and linters every time before a `git commit`.
 
 ::: tab
 ### Python
-Install [pre-commit](https://pre-commit.com/) and add it to your `requirements.txt` or 
+Install [pre-commit](https://pre-commit.com/) and add it to your `requirements.txt` or
 `pyproject.toml`.
 
 Create a `pre-commit` config file named `.pre-commit-config.yaml`.
@@ -199,10 +226,10 @@ repos:
       types_or: [ python, pyi ]
 ```
 
-If you would want to run additional checks, you need to add a new `- repo:` entry 
+If you would want to run additional checks, you need to add a new `- repo:` entry
 to the `pre-commit` config file.
 
-Make sure to add and commit this file to your `git` repository, so your collaborators 
+Make sure to add and commit this file to your `git` repository, so your collaborators
 will use the exact same configurations and versions.
 
 ```bash
@@ -234,10 +261,10 @@ and make sure to add and commit your updated config file.
 
 Install the package `precommit` and initialize it.
 
-⚠️ This package is only supported on operating systems that are also officially 
-supported by R. Please check the [R Download page](https://cran.rstudio.org/) which 
-ones are eligible. Non long-term-stable (LTS) Ubuntu distributions, for example, are 
-not. Installing and running `precommit` on non-supported operating systems will 
+⚠️ This package is only supported on operating systems that are also officially
+supported by R. Please check the [R Download page](https://cran.rstudio.org/) which
+ones are eligible. Non long-term-stable (LTS) Ubuntu distributions, for example, are
+not. Installing and running `precommit` on non-supported operating systems will
 probably require extra manual work.
 
 ```R
@@ -245,7 +272,7 @@ install.packages("precommit")
 precommit::use_precommit()
 ```
 
-RStudio will open the `.pre-commit-config.yaml` file for you to review. It will look 
+RStudio will open the `.pre-commit-config.yaml` file for you to review. It will look
 something like this:
 
 ```yaml
@@ -254,9 +281,9 @@ something like this:
 repos:
 -   repo: https://github.com/lorenzwalthert/precommit
     rev: v0.4.3.9017
-    hooks: 
+    hooks:
     -   id: style-files
-        args: [--style_pkg=styler, --style_fun=tidyverse_style]    
+        args: [--style_pkg=styler, --style_fun=tidyverse_style]
     -   id: spell-check
         exclude: >
           (?x)^(
@@ -294,7 +321,7 @@ repos:
     -   id: no-debug-statement
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
-    hooks: 
+    hooks:
     -   id: check-added-large-files
         args: ['--maxkb=200']
     -   id: end-of-file-fixer
@@ -317,17 +344,17 @@ ci:
     autoupdate_schedule: monthly
 ```
 
-You can comment out `repo` or `id` stanzas if you don't want them, or add new 
+You can comment out `repo` or `id` stanzas if you don't want them, or add new
 ones if you want more checks to happen before you commit files.
 
-<!-- Head over to [the Tidyverse style guide](https://style.tidyverse.org/){target="_blank"}.  
+<!-- Head over to [the Tidyverse style guide](https://style.tidyverse.org/){target="_blank"}.
 
-Then take a look at (a part of) your own R script, and identify where the guidelines 
+Then take a look at (a part of) your own R script, and identify where the guidelines
 have not been followed. Check the following:
 
 - [Indentation](https://style.tidyverse.org/functions.html#multi-line-function-definitions){target="_blank"}
 - [Spacing](https://style.tidyverse.org/syntax.html#spacing){target="_blank"}
-- [File](https://style.tidyverse.org/files.html){target="_blank"} and [object](https://style.tidyverse.org/syntax.html){target="_blank"} 
+- [File](https://style.tidyverse.org/files.html){target="_blank"} and [object](https://style.tidyverse.org/syntax.html){target="_blank"}
 naming conventions
 - [Comments](https://style.tidyverse.org/functions.html#comments){target="_blank"}
 
@@ -339,8 +366,8 @@ https://www.r-bloggers.com/2022/09/enforcing-style-in-an-r-project/
 
 :::
 
-⚠️ Failed pre-commit checks will also fail the commit! Make sure to resolve the issues 
-- be it fixing the code, or excluding certain lines from being checked - and commit 
+⚠️ Failed pre-commit checks will also fail the commit! Make sure to resolve the issues
+- be it fixing the code, or excluding certain lines from being checked - and commit
 again.
 
 :::
@@ -348,51 +375,51 @@ again.
 
 ### Further reading: CI/CD
 
-We went from running formatting and linting locally to automating the checks for 
-every commit. This still leaves a margin for error since your collaborators will 
-need to set up the git hooks first. The next line of defense against messy contributions 
+We went from running formatting and linting locally to automating the checks for
+every commit. This still leaves a margin for error since your collaborators will
+need to set up the git hooks first. The next line of defense against messy contributions
 is CI/CD (Continuous Integration / Continuous Delivery).
 
-It goes beyond the scope of this module, but you can set up your remote repository 
-such that every push (or pull/merge request) triggers a set of checks. For GitHub it 
-is named [GitHub Actions](https://docs.github.com/en/actions), while GitLab just calls 
-it [CI/CD](https://docs.gitlab.com/ci/). It is useful beyond just code style; other 
-common usecases include automated testing (even on different platforms, like Linux, Windows 
-or MacOS), compilation and packaging, deployment, benchmarking, security checks... 
-There is a whole [marketplace](https://github.com/marketplace) for reusing CI/CD 
+It goes beyond the scope of this module, but you can set up your remote repository
+such that every push (or pull/merge request) triggers a set of checks. For GitHub it
+is named [GitHub Actions](https://docs.github.com/en/actions), while GitLab just calls
+it [CI/CD](https://docs.gitlab.com/ci/). It is useful beyond just code style; other
+common usecases include automated testing (even on different platforms, like Linux, Windows
+or MacOS), compilation and packaging, deployment, benchmarking, security checks...
+There is a whole [marketplace](https://github.com/marketplace) for reusing CI/CD
 recipes.
 
-Usually the tools you use will supply instructions on how to run them in this automated way. 
-Check out [`ruff` integrations](https://docs.astral.sh/ruff/integrations/) for Python, 
-or [`lintr` integrations](https://github.com/r-lib/lintr/?tab=readme-ov-file#setting-up-github-actions) 
-and [`styler` integrations](https://github.com/r-lib/actions/tree/v2-branch/examples#style-package) for R. 
+Usually the tools you use will supply instructions on how to run them in this automated way.
+Check out [`ruff` integrations](https://docs.astral.sh/ruff/integrations/) for Python,
+or [`lintr` integrations](https://github.com/r-lib/lintr/?tab=readme-ov-file#setting-up-github-actions)
+and [`styler` integrations](https://github.com/r-lib/actions/tree/v2-branch/examples#style-package) for R.
 Both [rely on the `usethis`](https://usethis.r-lib.org/reference/use_github_action.html) package.
 
-## Modular coding 
+## Modular coding
 
 ### What is modularity?
-Modularity refers to the practice of building software from smaller, self-contained, 
-and independent elements. Each element is designed to handle a specific set of tasks, 
+Modularity refers to the practice of building software from smaller, self-contained,
+and independent elements. Each element is designed to handle a specific set of tasks,
 contributing to the overall functionality of the system.
 
 Modular coding is explained in more detail in [these slides](https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/good-practices-lesson/modular-code-slides){target="_blank"}.
 
 ### Writing functions
-One of the best ways to improve your code and to make it more modular is to write functions. 
-Functions allow you to automate common tasks in a more powerful and general way than 
+One of the best ways to improve your code and to make it more modular is to write functions.
+Functions allow you to automate common tasks in a more powerful and general way than
 copy-and-pasting. Writing a function has four big advantages over using copy-and-paste:
 
 1.  You can give a function an evocative name that makes your code easier to understand.
 
 2.  As requirements change, you only need to update code in one place, instead of many.
 
-3.  You eliminate the chance of making incidental mistakes when you copy and paste (i.e. 
+3.  You eliminate the chance of making incidental mistakes when you copy and paste (i.e.
 updating a variable name in one place, but not in another).
 
-4.  It makes it easier to reuse work from project-to-project, increasing your productivity 
+4.  It makes it easier to reuse work from project-to-project, increasing your productivity
 over time.
 
-A good rule of thumb is to consider writing a function whenever you’ve copied and pasted a 
+A good rule of thumb is to consider writing a function whenever you’ve copied and pasted a
 block of code more than twice (i.e. you now have three copies of the same code).
 
 ### Defining a function
@@ -429,10 +456,10 @@ statements that are executed when it runs--is contained within curly braces
 (`{}`). The statements in the body are indented by two spaces. This makes the
 code easier to read but does not affect how the code operates.
 
-It is useful to think of creating functions like writing a cookbook. First you define 
-the "ingredients" that your function needs. In this case, we only need one ingredient 
-to use our function: "temp". After we list our ingredients, we then say what we will do 
-with them, in this case, we are taking our ingredient and applying a set of mathematical 
+It is useful to think of creating functions like writing a cookbook. First you define
+the "ingredients" that your function needs. In this case, we only need one ingredient
+to use our function: "temp". After we list our ingredients, we then say what we will do
+with them, in this case, we are taking our ingredient and applying a set of mathematical
 operators to it.
 
 When we call the function, the values we pass to it as arguments are assigned to
@@ -462,7 +489,7 @@ fahr_to_kelvin(212)
 ```
 
 ### Defining a function in Python
-Let's open a new Python script file and call it `functions-lesson.py` 
+Let's open a new Python script file and call it `functions-lesson.py`
 
 The general structure of a function is:
 
@@ -478,21 +505,21 @@ Fahrenheit to Kelvin:
 ```python
 def fahr_to_kelvin(temp):
     kelvin = ((temp - 32) * (5 / 9)) + 273.15
-    return kelvin 
+    return kelvin
 ```
 
 We define `fahr_to_kelvin()` by using the `def` keyword. The
-list of argument names are contained within parentheses.   
+list of argument names are contained within parentheses.
 
 Next, the
 body of the function--the
-statements that are executed when it runs--is indicated with indentation. 
+statements that are executed when it runs--is indicated with indentation.
 The statements in the body are indented by four spaces.
 
-It is useful to think of creating functions like writing a cookbook. First you define 
-the "ingredients" that your function needs. In this case, we only need one ingredient 
-to use our function: "temp". After we list our ingredients, we then say what we will do 
-with them, in this case, we are taking our ingredient and applying a set of mathematical 
+It is useful to think of creating functions like writing a cookbook. First you define
+the "ingredients" that your function needs. In this case, we only need one ingredient
+to use our function: "temp". After we list our ingredients, we then say what we will do
+with them, in this case, we are taking our ingredient and applying a set of mathematical
 operators to it.
 
 When we call the function, the values we pass to it as arguments are assigned to
@@ -530,7 +557,7 @@ Try to look for pieces of code that you repeat throughout your project.
 [Create an issue in your project](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue){target="_blank"}
 for each possible function that you find. (Actually implementing the function is beyond the scope of this workshop).
 
-GitHub issues are a good way to track your progress and to-do list. 
+GitHub issues are a good way to track your progress and to-do list.
 As well as a way for others to signal issues with your code.
 :::
 
@@ -600,7 +627,7 @@ Refactor the code by extracting functions without altering its functionality.
 
 Share your answers in the collaborative document.
 
-:::: solution 
+:::: solution
 
 ## Solution 1 - Basic
 
@@ -955,9 +982,9 @@ fahr_to_celsius <- function(temp) {
 
 The Modular coding section is based on the following sources:
 
-- [Modular Code Development](https://esciencecenter-digital-skills.github.io/good-practices-lesson/1-modular-code.html){target="_blank"} 
+- [Modular Code Development](https://esciencecenter-digital-skills.github.io/good-practices-lesson/1-modular-code.html){target="_blank"}
 from Good practices in research software development
-- [Functions explained](https://swcarpentry.github.io/r-novice-gapminder/10-functions.html){target="_blank"} 
+- [Functions explained](https://swcarpentry.github.io/r-novice-gapminder/10-functions.html){target="_blank"}
 from R for Reproducible Scientific Analysis Software Carpentry lesson
 - [Functions](https://r4ds.hadley.nz/functions){target="_blank"} chapter from R for Data Science (2e)
 
