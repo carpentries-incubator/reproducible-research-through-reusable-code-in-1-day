@@ -44,10 +44,10 @@ Then run:
 
 ``` r
 library(usethis)
-use_mit_license(copyright_holder = "Your Name")
+usethis::use_apache_license()
 ```
 
-This will create a file called `LICENSE` with the permissive MIT license in the root folder of your project. If you want to use a different license, check out the [usethis documentation](https://usethis.r-lib.org/reference/licenses.html) to see the other options.
+This will create a file called `LICENSE` with the permissive Apache-2.0 license in the root folder of your project. If you want to use a different license, check out the [usethis documentation](https://usethis.r-lib.org/reference/licenses.html) so see the other options.
 
 Once you generated the `LICENSE` file, inspect it and make sure the copyright holder, the organization and year are correct. You can then stage the new file and commit the changes with a suitable message, for example:
 
@@ -65,10 +65,10 @@ In the terminal, run:
 
 ```bash
 pip install reuse  # if you don't have reuse installed already
-reuse download --output LICENSE MIT
+reuse download --output LICENSE Apache-2.0
 ```
 
-This will create a file called `LICENSE` with the permissive MIT license in the root folder of your project. If you want to use a different license, check out the [`supported-licenses` command](https://reuse.readthedocs.io/en/stable/man/reuse-supported-licenses.html) to see the other options.
+This will create a file called `LICENSE` with the permissive Apache 2.0 license in the root folder of your project. If you want to use a different license, check out the [`supported-licenses` command](https://reuse.readthedocs.io/en/stable/man/reuse-supported-licenses.html) to see the other options.
 
 Once you generated the `LICENSE` file, inspect it and make sure the copyright holder, the organization and year are correct. You can then stage the new file and commit the changes with a suitable message, for example:
 
