@@ -1,11 +1,8 @@
-# This template CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to replace its contents
-# with information about your lesson.
-# Remember to update this file periodically, 
-# ensuring that the author list and other fields remain accurate.
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: FIXME
+title: Reproducible research through reusable code in 1 day
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +10,46 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Eduard
+    family-names: Klapwijk
+    orcid: 'https://orcid.org/0000-0002-8936-0365'
+    affiliation: SURF
+    email: eduard.klapwijk@surf.nl
+  - given-names: ' Sven'
+    name-particle: van der
+    family-names: Burg
+    email: svenvanderburg@gmail.com
+    orcid: 'https://orcid.org/0000-0003-1250-6968'
+  - given-names: ' Sander'
+    family-names: Rijn
+    name-particle: van
+    email: s.vanrijn@esciencecenter.nl
+    affiliation: Netherlands eScience Center
+    orcid: 'https://orcid.org/0000-0001-6159-041X'
+  - given-names: Ole
+    family-names: Mussmann
+    email: o.mussmann@esciencecenter.nl
+    affiliation: Netherlands eScience Center
+    orcid: 'https://orcid.org/0000-0002-3803-4287'
+identifiers:
+  - type: url
+    value: >-
+      https://carpentries-incubator.github.io/reproducible-research-through-reusable-code-in-1-day/
+    description: >-
+      Lesson material for the workshop: Reproducible
+      research through reusable code
+repository-code: >-
+  https://github.com/carpentries-incubator/reproducible-research-through-reusable-code-in-1-day
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  This workshop teaches you the skills to make your code
+  reusable by others. You will practice these skills by
+  directly applying them to your own project. Inevitably,
+  this will make your research more reproducible.
+keywords:
+  - software
+  - reproducibility
+  - workshop
+  - research software engineering
+  - research software support
 license: CC-BY-4.0
+version: pre-alpha

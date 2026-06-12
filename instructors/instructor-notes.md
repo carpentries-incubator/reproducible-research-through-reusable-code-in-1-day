@@ -25,8 +25,17 @@ Also mention that you are available to answer question through email before the 
 In our experience we achieve a 100% rate of participants completing the pre-workshop assignment.
 
 ## Slides
-You can find intro and ending slides 
-[in this workshop website of a previous edition](https://github.com/esciencecenter-digital-skills/2025-04-03-repro-essb/tree/main/files).
+### Previous Iterations
+#### **2025-04-03** at _Erasmus University Rotterdam_
+- Slides repo: [github.com/esciencecenter-digital-skills/2025-04-03-repro-essb/tree/main/files](https://github.com/esciencecenter-digital-skills/2025-04-03-repro-essb/tree/main/files){target="_blank"}
+
+#### **2026-02-03** at _The Netherlands eScience Center_
+- Web slides: [nlesc-slides.github.io/2026-02-04_Reproducible_Research](https://nlesc-slides.github.io/2026-02-04_Reproducible_Research/){target="_blank"}
+- Slides repo: [github.com/NLeSC-slides/2026-02-04_Reproducible_Research](https://github.com/NLeSC-slides/2026-02-04_Reproducible_Research){target="_blank"}
+
+### External Resources for Chapters
+#### Document your Research Software
+- Guidance: [esciencecenter-digital-skills.github.io/digital-skills-slides/modules/good-practices-lesson/documentation-slides](https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/good-practices-lesson/documentation-slides){target="_blank"}
 
 ## Schedule
 We recommend the following schedule:

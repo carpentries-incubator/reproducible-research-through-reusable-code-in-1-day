@@ -4,7 +4,7 @@ teaching: 5
 exercises: 45
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - What other improvements can I make to make my project more reproducible?
 
@@ -84,11 +84,11 @@ git push # if you are using a remote repository
 
 ::: challenge
 ## Add `fairsoftwarechecklist.net` badge to your README file
-Add the [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=00&a=00000&i=00000&r=000){target="_blank"} 
+Add the [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=00&a=00000&i=00000&r=000){target="_blank"}
 badge to your README file. Do the self-assessment for FAIR research software on [fairsoftwarechecklist.net](https://fairsoftwarechecklist.net/){target="_blank"}
 and link to your answers using the badge.
 
-Alternatively, you can add the [![FAIR software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green)](https://fair-software.eu/){target="_blank"} 
+Alternatively, you can add the [![FAIR software badge](fig/fair-software-green.svg)](https://fair-software.eu/){target="_blank"}
 badge to your README. Follow [the instructions on the howfairis GitHub repo](https://github.com/fair-software/howfairis){target="_blank"} to run an automated check
 on your code repository.
 
@@ -100,7 +100,7 @@ Read more about FAIR software at [https://fair-software.eu/](https://fair-softwa
 ::: challenge
 ## Add information about how to cite your project.
 
-Use [cff-initializer](https://citation-file-format.github.io/cff-initializer-javascript/#/){target="_blank"} to create a CITATION.cff 
+Use [cff-initializer](https://citation-file-format.github.io/cff-initializer-javascript/#/){target="_blank"} to create a CITATION.cff
 file for your project.
 
 :::
@@ -118,20 +118,20 @@ By publishing your repository on Zenodo, it will receive a persistent identifier
 ::: challenge
 ## Add data to your project.
 
-Make sure you are allowed to publish the data (most importantly, it should be de-identified 
-in the case of human participants). 
+Make sure you are allowed to publish the data (most importantly, it should be de-identified
+in the case of human participants).
 
-Publish the data in a data repository and include the link to your data set in your GitHub 
-repository. Data repositories offer organized and structured storage and access of data, 
+Publish the data in a data repository and include the link to your data set in your GitHub
+repository. Data repositories offer organized and structured storage and access of data,
 ensuring that data sets abide by the [FAIR principles](https://www.go-fair.org/fair-principles/){target="_blank"}
-, allowing data are findable, accessible, interoperable, and reusable (FAIR) as much as 
-possible. 
+, allowing data are findable, accessible, interoperable, and reusable (FAIR) as much as
+possible.
 
-Alternatively, you can include a data file in your GitHub repository. In case you are unable 
+Alternatively, you can include a data file in your GitHub repository. In case you are unable
 to share the data, include dummy data in the project.
 
-Make sure all data files are saved in a 
-[sustainable file format](https://dans.knaw.nl/en/file-formats/){target="_blank"} such as .csv, 
+Make sure all data files are saved in a
+[sustainable file format](https://dans.knaw.nl/en/file-formats/){target="_blank"} such as .csv,
 and that the files and variables are [properly named](https://doi.org/10.5281/zenodo.7551576){target="_blank"}
 and clearly described.
 
