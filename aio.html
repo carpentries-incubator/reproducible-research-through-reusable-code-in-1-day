@@ -891,7 +891,7 @@ remotes::install_github("anotheruser/anotherproject@sometag")</code></pre>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>A</strong>: If there is no standard file to look for, it
 might become very difficult for us to create the software environment
@@ -943,7 +943,7 @@ dependency?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Any dependencies listed in the README are still helpful, so listing
@@ -1283,7 +1283,7 @@ why?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>
@@ -2565,7 +2565,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-further-improvements"><p>Content from <a href="further-improvements.html">Further improvements to your project</a></p>
 <hr>
-<p>Last updated on 2026-06-10 |
+<p>Last updated on 2026-06-15 |
 
         <a href="https://github.com/esciencecenter-digital-skills/reproducible-research-through-reusable-code/edit/main/episodes/further-improvements.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2613,10 +2613,92 @@ project.</p>
 <div id="add-a-license-to-your-project" class="callout-inner">
 <h3 class="callout-title">Add a license to your project</h3>
 <div class="callout-content">
-<p>Pick a license and add it to the repository. Use <a href="https://choosealicense.com/" class="external-link uri">https://choosealicense.com/</a> to find a license for your
-project. Or if you do not know, you can use <a href="https://choosealicense.com/licenses/apache-2.0/" target="_blank" class="external-link">Apache License 2.0</a>, a common permissive open-source
-license. To get some more background information about licenses, the <a href="https://book.the-turing-way.org/reproducible-research/licensing/" class="external-link">licensing
-chapter from the Turing Way</a> is a good starting point.</p>
+<p>A license is essential so that others can reuse and adapt your
+work.</p>
+<p>You can use <a href="https://choosealicense.com/" class="external-link uri">https://choosealicense.com/</a> to find a suitable license
+for your project. If you do not know which one to pick, we recommend
+using the <a href="https://choosealicense.com/licenses/apache-2.0/" target="_blank" class="external-link">Apache License 2.0</a>, a common permissive open-source
+license. You can also check if your institution recommends certain
+licenses for research software.</p>
+<p>You can find more information on licenses in the <a href="https://book.the-turing-way.org/reproducible-research/licensing/" class="external-link">licensing
+chapter from the Turing Way</a>.</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-R" name="R" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-R" type="button" role="tab" aria-controls="nav-tabpanel-1-R" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-R">
+  R
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-Python" name="Python" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Python" type="button" role="tab" aria-controls="nav-tabpanel-1-Python" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-Python">
+  Python
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-R" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-R">
+<p>You can use <a href="https://usethis.r-lib.org/reference/licenses.html" class="external-link"><code>usethis</code></a>
+to automatically generate a license of your choice. We installed
+<code>usethis</code> in an earlier episode, but if you don’t have it
+yet, install it with:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span></span></code></pre>
+</div>
+<p>Then run:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">usethis</span><span class="op">)</span></span>
+<span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_apache_license</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<p>This will create a file called <code>LICENSE</code> with the
+permissive Apache-2.0 license in the root folder of your project. If you
+want to use a different license, check out the <a href="https://usethis.r-lib.org/reference/licenses.html" class="external-link">usethis
+documentation</a> to see the other options.</p>
+<p>Once you generated the <code>LICENSE</code> file, inspect it and make
+sure the copyright holder, the organization and year are correct. You
+can then stage the new file and commit the changes with a suitable
+message, for example:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">git</span> add LICENSE</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add LICENSE"</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a><span class="fu">git</span> push <span class="co"># if you are using a remote repository</span></span></code></pre>
+</div>
+</div>
+<div id="nav-tabpanel-1-Python" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Python">
+<p>You can use the <a href="https://pypi.org/project/reuse/" class="external-link"><code>reuse</code></a> package to
+automatically generate a license of your choice.</p>
+<p>In the terminal, run:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">pip</span> install reuse  <span class="co"># if you don't have reuse installed already</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="ex">reuse</span> download <span class="at">--output</span> LICENSE Apache-2.0</span></code></pre>
+</div>
+<p>This will create a file called <code>LICENSE</code> with the
+permissive Apache 2.0 license in the root folder of your project. If you
+want to use a different license, check out the <a href="https://reuse.readthedocs.io/en/stable/man/reuse-supported-licenses.html" class="external-link"><code>supported-licenses</code>
+command</a> to see the other options.</p>
+<p>Once you generated the <code>LICENSE</code> file, inspect it and make
+sure the copyright holder, the organization and year are correct. You
+can then stage the new file and commit the changes with a suitable
+message, for example:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="fu">git</span> add LICENSE</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add LICENSE"</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a><span class="fu">git</span> push <span class="co"># if you are using a remote repository</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2857,8 +2939,8 @@ reproducible and reusable your code is</li>
   "url": "https://esciencecenter-digital-skills.github.io/reproducible-research-through-reusable-code/aio.html",
   "identifier": "https://esciencecenter-digital-skills.github.io/reproducible-research-through-reusable-code/aio.html",
   "dateCreated": "2024-11-27",
-  "dateModified": "2026-06-10",
-  "datePublished": "2026-06-10"
+  "dateModified": "2026-06-15",
+  "datePublished": "2026-06-15"
 }
 
   </script><script>
