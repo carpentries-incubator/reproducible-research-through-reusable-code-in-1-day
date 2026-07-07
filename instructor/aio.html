@@ -839,7 +839,7 @@ re-run their code before adapting it.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-Python" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Python">
+<div id="nav-tabpanel-1-Python" class="tab-pane show active" aria-labelledby="nav-tab-1-Python" role="tabpanel">
 <p><strong>A</strong>: You find various library imports across the code.
 The README file lists some of the main libraries that were used but does
 not mention versions.</p>
@@ -860,7 +860,7 @@ click==7.0
 someproject==1.2.3
 git+https://github.com/anotheruser/anotherproject.git@sometag</code></pre>
 </div>
-<div id="nav-tabpanel-1-R" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-R">
+<div id="nav-tabpanel-1-R" class="tab-pane" aria-labelledby="nav-tab-1-R" role="tabpanel">
 <p><strong>A</strong>: You find various <code>library()</code> or
 <code>require()</code> calls across the code. The README file lists a
 few of the libraries that were used but does not mention versions.</p>
@@ -895,7 +895,7 @@ remotes::install_github("anotheruser/anotherproject@sometag")</code></pre>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>A</strong>: If there is no standard file to look for, it
 might become very difficult for us to create the software environment
@@ -947,7 +947,7 @@ dependency?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Any dependencies listed in the README are still helpful, so listing
@@ -994,7 +994,7 @@ communicate this information?</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-Python" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Python">
+<div id="nav-tabpanel-2-Python" class="tab-pane show active" aria-labelledby="nav-tab-2-Python" role="tabpanel">
 <p>Try this in your own project:</p>
 <pre class="console"><code>$ pip freeze &gt; requirements.txt</code></pre>
 <p>Have a look at the generated file and discuss what you see.</p>
@@ -1004,7 +1004,7 @@ communicate this information?</p>
 over to the <a href="https://carpentries-incubator.github.io/python-intermediate-development/12-virtual-environments/index.html#creating-virtual-environments-using-venv" target="_blank" class="external-link">Carpentries Intermediate Research Software Development
 Skills (Python)</a> lesson.</p>
 </div>
-<div id="nav-tabpanel-2-R" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-R">
+<div id="nav-tabpanel-2-R" class="tab-pane" aria-labelledby="nav-tab-2-R" role="tabpanel">
 <p>This example uses renv.</p>
 <p>First initialize renv (install the package if needed) using
 <code>renv::init()</code>. Then try to “save” and “load” the state of
@@ -1044,7 +1044,7 @@ dependencies to GitHub:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-RStudio" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-RStudio">
+<div id="nav-tabpanel-3-RStudio" class="tab-pane show active" aria-labelledby="nav-tab-3-RStudio" role="tabpanel">
 <ol style="list-style-type: decimal">
 <li>Add your changed files by clicking on ‘Staged’ (share not only the
 lock file, but also the .RProfile and activate.R files needed to
@@ -1054,7 +1054,7 @@ dependencies”) and clicking on ‘Commit’.</li>
 <li>Push your changes to GitHub by clicking on ‘Push’.</li>
 </ol>
 </div>
-<div id="nav-tabpanel-3-VisualStudioCode" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-VisualStudioCode">
+<div id="nav-tabpanel-3-VisualStudioCode" class="tab-pane" aria-labelledby="nav-tab-3-VisualStudioCode" role="tabpanel">
 <ol style="list-style-type: decimal">
 <li>Add your changed files by clicking on the ‘+’ next to ‘Changes’ or
 next to the individual files (requirements.txt).</li>
@@ -1129,7 +1129,7 @@ any links that you are not going to use.
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The main purpose of this lesson is to make sure participants
 understand that DOCUMENTATION IS IMPORTANT. The goal is more to trigger
@@ -1304,7 +1304,7 @@ why?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>
@@ -1416,7 +1416,7 @@ documentation:</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>You can show the example documentation deployed on GitHub pages here:
 <a href="https://esciencecenter-digital-skills.github.io/good-practices-documentation-example/" class="external-link uri">https://esciencecenter-digital-skills.github.io/good-practices-documentation-example/</a></p>
@@ -1558,7 +1558,7 @@ instead?</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>For the exercises, focus on one or two files instead of a whole
 project. The goals is to learn the tools, not necessarily to improve
@@ -1595,7 +1595,7 @@ code.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <p><a href="https://github.com/astral-sh/ruff" class="external-link">The program
 <code>ruff</code></a> can both format <em>and</em> lint Python code. <a href="https://docs.astral.sh/ruff/installation/" class="external-link">Install
 <code>ruff</code></a> from PyPI or conda. Don’t forget to add it to your
@@ -1646,7 +1646,7 @@ e.g. <code>ruff check --diff</code>.</p>
 the details <code>ruff</code> pays attention to when linting. Did you
 learn something new about the Python language?</p>
 </div>
-<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <p>The standard option for <a href="https://styler.r-lib.org/" class="external-link">formatting R code is
 <code>styler</code></a>, for <a href="https://lintr.r-lib.org/" class="external-link">linting
 it’s <code>lintr</code></a>.</p>
@@ -1726,7 +1726,7 @@ every time before a <code>git commit</code>.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <p>Install <a href="https://pre-commit.com/" class="external-link">pre-commit</a> and add it
 to your <code>requirements.txt</code> or
 <code>pyproject.toml</code>.</p>
@@ -1791,7 +1791,7 @@ and versions.</p>
 </div>
 <p>and make sure to add and commit your updated config file.</p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <p>Install the package <code>precommit</code> and initialize it.</p>
 <p>⚠️ This package is only supported on operating systems that are also
 officially supported by R. Please check the <a href="https://cran.rstudio.org/" class="external-link">R Download page</a> which ones are
@@ -1966,7 +1966,7 @@ have three copies of the same code).</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-1" class="tab-pane show active" aria-labelledby="nav-tab-3-1" role="tabpanel">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
 <p>Let’s open a new R script file and call it functions-lesson.R.</p>
 <p>The general structure of a function is:</p>
 <div class="codewrapper sourceCode" id="cb14">
@@ -2033,7 +2033,7 @@ different from calling any other function:</p>
 <pre class="output" tabindex="0"><code>[1] 373.15</code></pre>
 </div>
 </div>
-<div id="nav-tabpanel-3-2" class="tab-pane" aria-labelledby="nav-tab-3-2" role="tabpanel">
+<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
 <p>Let’s open a new Python script file and call it
 <code>functions-lesson.py</code></p>
 <p>The general structure of a function is:</p>
@@ -2101,7 +2101,7 @@ different from calling any other function:</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Again, for the next exercise, focus on one or two files first.
 Students who need a challenge can choose to improve more files.</p>
@@ -2229,7 +2229,7 @@ functionality.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Solution 1 - Basic </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb27">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2376,7 +2376,7 @@ functionality.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Solution 2 - Advanced </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2533,7 +2533,7 @@ temperature in Kelvin and returns that temperature in Celsius.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Solution to challenge 1 </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Write a function called <code>kelvin_to_celsius</code> that takes a
 temperature in Kelvin and returns that temperature in Celsius</p>
@@ -2590,7 +2590,7 @@ prefer).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Solution to challenge 2 </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Define the function to convert directly from Fahrenheit to Celsius,
 by reusing these two functions above</p>
@@ -2721,7 +2721,7 @@ chapter from the Turing Way</a>.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-R" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-R">
+<div id="nav-tabpanel-1-R" class="tab-pane show active" aria-labelledby="nav-tab-1-R" role="tabpanel">
 <p>You can use <a href="https://usethis.r-lib.org/reference/licenses.html" class="external-link"><code>usethis</code></a>
 to automatically generate a license of your choice. We installed
 <code>usethis</code> in an earlier episode, but if you don’t have it
@@ -2756,7 +2756,7 @@ message, for example:</p>
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a><span class="fu">git</span> push <span class="co"># if you are using a remote repository</span></span></code></pre>
 </div>
 </div>
-<div id="nav-tabpanel-1-Python" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Python">
+<div id="nav-tabpanel-1-Python" class="tab-pane" aria-labelledby="nav-tab-1-Python" role="tabpanel">
 <p>You can use the <a href="https://pypi.org/project/reuse/" class="external-link"><code>reuse</code></a> package to
 automatically generate a license of your choice.</p>
 <p>In the terminal, run:</p>
@@ -3025,8 +3025,8 @@ reproducible and reusable your code is</li>
   "url": "https://esciencecenter-digital-skills.github.io/reproducible-research-through-reusable-code/instructor/aio.html",
   "identifier": "https://esciencecenter-digital-skills.github.io/reproducible-research-through-reusable-code/instructor/aio.html",
   "dateCreated": "2024-11-27",
-  "dateModified": "2026-06-30",
-  "datePublished": "2026-06-30"
+  "dateModified": "2026-07-07",
+  "datePublished": "2026-07-07"
 }
 
   </script><script>
