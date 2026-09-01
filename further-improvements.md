@@ -1,0 +1,146 @@
+---
+title: "Further improvements to your project"
+teaching: 5
+exercises: 45
+---
+
+:::::::::::::::::::::::::::::::::::::: questions
+
+- What other improvements can I make to make my project more reproducible?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Add a license to your project
+- Add `howfairis` badge to your README file
+- Add information about how to cite your project
+- Link your project to Zenodo
+- Add data to your project
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+In this part we will add some further improvements to making your project more reproducible.
+
+Try to prioritize what you think will be most beneficial to your project.
+
+::: challenge
+## Add a license to your project
+
+A license is essential so that others can reuse and adapt your work. 
+
+You can use  https://choosealicense.com/ to find a suitable license for your project. If you do not know which one to pick, we recommend using the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/){target="_blank"}, a common permissive open-source license. You can also check if your institution recommends certain licenses for research software. 
+
+You can find more information on licenses in the [licensing chapter from the Turing Way](https://book.the-turing-way.org/reproducible-research/licensing/).
+
+::: group-tab
+### R
+
+You can use [`usethis`](https://usethis.r-lib.org/reference/licenses.html) to automatically generate a license of your choice. We installed `usethis` in an earlier episode, but if you don't have it yet, install it with:
+``` r
+install.packages("usethis")
+```
+Then run:
+
+``` r
+library(usethis)
+usethis::use_apache_license()
+```
+
+This will create a file called `LICENSE` with the permissive Apache-2.0 license in the root folder of your project. If you want to use a different license, check out the [usethis documentation](https://usethis.r-lib.org/reference/licenses.html) to see the other options.
+
+Once you generated the `LICENSE` file, inspect it and make sure the copyright holder, the organization and year are correct. You can then stage the new file and commit the changes with a suitable message, for example:
+
+``` bash
+git add LICENSE
+git commit -m "Add LICENSE"
+git push # if you are using a remote repository
+```
+
+### Python
+
+You can use the [`reuse`](https://pypi.org/project/reuse/) package to automatically generate a license of your choice.
+
+In the terminal, run:
+
+```bash
+pip install reuse  # if you don't have reuse installed already
+reuse download --output LICENSE Apache-2.0
+```
+
+This will create a file called `LICENSE` with the permissive Apache 2.0 license in the root folder of your project. If you want to use a different license, check out the [`supported-licenses` command](https://reuse.readthedocs.io/en/stable/man/reuse-supported-licenses.html) to see the other options.
+
+Once you generated the `LICENSE` file, inspect it and make sure the copyright holder, the organization and year are correct. You can then stage the new file and commit the changes with a suitable message, for example:
+
+``` bash
+git add LICENSE
+git commit -m "Add LICENSE"
+git push # if you are using a remote repository
+```
+
+:::
+:::
+
+
+::: challenge
+## Add `fairsoftwarechecklist.net` badge to your README file
+Add the [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=00&a=00000&i=00000&r=000){target="_blank"}
+badge to your README file. Do the self-assessment for FAIR research software on [fairsoftwarechecklist.net](https://fairsoftwarechecklist.net/){target="_blank"}
+and link to your answers using the badge.
+
+Alternatively, you can add the [![FAIR software badge](fig/fair-software-green.svg)](https://fair-software.eu/){target="_blank"}
+badge to your README. Follow [the instructions on the howfairis GitHub repo](https://github.com/fair-software/howfairis){target="_blank"} to run an automated check
+on your code repository.
+
+How FAIR is your project and what do you need to do to improve it?
+Read more about FAIR software at [https://fair-software.eu/](https://fair-software.eu/){target="_blank"}
+
+:::
+
+::: challenge
+## Add information about how to cite your project.
+
+Use [cff-initializer](https://citation-file-format.github.io/cff-initializer-javascript/#/){target="_blank"} to create a CITATION.cff
+file for your project.
+
+:::
+
+::: challenge
+## Link your project to Zenodo.
+
+1. Create an account at [Zenodo](https://zenodo.org/){target="_blank"}
+2. [Link your GitHub repository to Zenodo](https://zenodo.org/account/settings/github/){target="_blank"}. Follow the instructions on the page.
+
+By publishing your repository on Zenodo, it will receive a persistent identifier. This will help to avoid link rot, and make your project more FAIR.
+
+:::
+
+::: challenge
+## Add data to your project.
+
+Make sure you are allowed to publish the data (most importantly, it should be de-identified
+in the case of human participants).
+
+Publish the data in a data repository and include the link to your data set in your GitHub
+repository. Data repositories offer organized and structured storage and access of data,
+ensuring that data sets abide by the [FAIR principles](https://www.go-fair.org/fair-principles/){target="_blank"}
+, allowing data are findable, accessible, interoperable, and reusable (FAIR) as much as
+possible.
+
+Alternatively, you can include a data file in your GitHub repository. In case you are unable
+to share the data, include dummy data in the project.
+
+Make sure all data files are saved in a
+[sustainable file format](https://dans.knaw.nl/en/file-formats/){target="_blank"} such as .csv,
+and that the files and variables are [properly named](https://doi.org/10.5281/zenodo.7551576){target="_blank"}
+and clearly described.
+
+
+:::
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- There are various ways to improve the reproducibility of your project.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
